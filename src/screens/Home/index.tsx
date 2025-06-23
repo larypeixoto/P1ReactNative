@@ -1,7 +1,9 @@
-import { View, ImageBackground, TouchableOpacity, Text, ScrollView } from "react-native";
+import { View, ImageBackground, TouchableOpacity, Text, ScrollView,
+} from "react-native";
 import { HomensDosSonhos } from "../../components/Lists/HomensDosSonhos";
 import { LigadosPeloDestino } from "../../components/Lists/LigadosPeloDestino";
 import { Button } from "../../components/Button";
+import { StatusBar } from "expo-status-bar";
 import { styles } from "./styles";
 
 import { Top } from "../../components/Top";
@@ -12,10 +14,9 @@ import Banner from "../../assets/SegundaChanceNoAmor.jpg";
 export const HomePage = () => {
   return (
     <View style={styles.container}>
-      
-      <ScrollView 
-        showsVerticalScrollIndicator={false}
-      >
+      <StatusBar style="light" />
+
+      <ScrollView>
         <Top />
         <View style={styles.banner}>
           <ImageBackground source={Banner} style={styles.banner}>
@@ -33,9 +34,9 @@ export const HomePage = () => {
 
             <View style={styles.tagsDrama}>
               <Text style={styles.tag}>Korea</Text>
-              <Text style={styles.separator}>•</Text>
+              <Text style={styles.separator}> • </Text>
               <Text style={styles.tag}>Romance</Text>
-              <Text style={styles.separator}>•</Text>
+              <Text style={styles.separator}> • </Text>
               <Text style={styles.tag}>Comédia romântica</Text>
             </View>
           </ImageBackground>
@@ -49,15 +50,15 @@ export const HomePage = () => {
         <View style={styles.category}>
           <Text style={styles.categoryTitle}>Homens dos sonhos ›</Text>
         </View>
-        <HomensDosSonhos/>
+        <HomensDosSonhos />
 
         <View style={styles.category}>
           <Text style={styles.categoryTitle}>Ligados pelo destino ›</Text>
         </View>
 
-        <LigadosPeloDestino/>
+        <LigadosPeloDestino />
       </ScrollView>
       <Footer />
-          </View>
+    </View>
   );
 };

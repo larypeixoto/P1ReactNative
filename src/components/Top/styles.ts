@@ -4,17 +4,16 @@ export const styles = StyleSheet.create({
   topContainer: {
     backgroundColor: "#0A0A0A",
     paddingTop: 10,
-    paddingBottom:14,
-    paddingHorizontal:12,
+    paddingBottom: 14,
+    paddingHorizontal: 12,
   },
 
-  imageContainer: {
-  },
+  imageContainer: {},
 
   logoImage: {
     resizeMode: "contain",
-    width:150,
-    height: 130,
+    width: 130,
+    height: 108,
   },
 
   texto: {
@@ -22,18 +21,18 @@ export const styles = StyleSheet.create({
   },
 
   containerOpcoes: {
-    gap: 10,
-    flexDirection: 'row',
+    gap: 20,
+    flexDirection: "row",
   },
 
   todosOsProgramas: {
-    fontSize:18,
+    fontSize: 18,
     fontWeight: "bold",
     color: "#ffffff",
   },
 
   todosOsFilmes: {
-    fontSize:18,
-    color: "#ffffff",
-  }
+    fontSize: 18,
+    color: "#B5B5B5",
+  },
 });

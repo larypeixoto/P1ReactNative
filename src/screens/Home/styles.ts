@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
 
   banner: {
     width: "100%",
-    height: 300,
+    height: 234,
+    resizeMode: "cover",
     justifyContent: "flex-end",
   },
 
@@ -25,6 +26,7 @@ export const styles = StyleSheet.create({
   badgeText: {
     color: "#ffffff",
     borderRadius: 2,
+    fontSize: 10,
   },
 
   titleContainer: {
@@ -40,12 +42,13 @@ export const styles = StyleSheet.create({
   age: {
     marginLeft: 20,
     backgroundColor: "#ED6A14",
-    borderRadius: 3,
-    paddingHorizontal: 4,
-    width: 28,
-    height: 28,
+    borderRadius: 2,
+    paddingHorizontal: 2,
+    width: 24,
+    height: 25,
     justifyContent: "center",
     margin: 8,
+    marginBottom: 4,
   },
 
   ageText: {
@@ -62,6 +65,7 @@ export const styles = StyleSheet.create({
   tag: {
     color: "#7E7B7A",
     fontSize: 15,
+    letterSpacing: 1,
   },
 
   separator: {
@@ -80,12 +84,14 @@ export const styles = StyleSheet.create({
 
   category: {
     marginLeft: 14,
+    marginTop: 28,
+    marginBottom: 18,
   },
 
   categoryTitle: {
     color: "#ffffff",
     fontSize: 16,
     fontWeight: "bold",
-    margin:0,
+    margin: 0,
   },
 });

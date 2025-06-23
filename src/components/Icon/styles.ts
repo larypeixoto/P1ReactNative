@@ -5,4 +5,4 @@ export const styles = StyleSheet.create({
     width: 75,
     height: 66,
   },
-})
+});

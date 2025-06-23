@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    flex:1,
+    flex: 1,
     backgroundColor: "#1A1A1A",
   },
 
@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     paddingTop: 30,
     paddingLeft: 20,
     gap: 20,
+    marginBottom:100,
   },
 
   seta: {
@@ -28,14 +29,13 @@ export const styles = StyleSheet.create({
     paddingTop: 6,
   },
 
-    body: {
-    height: "100%",
+  body: {
     justifyContent: "center",
     alignItems: "center",
   },
 
   containerSenha: {
-    margin: 50,
+    marginTop: 50,
   },
 
   input: {
@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
 
   redefinicao: {
     flexDirection: "row",
-    marginTop: 10,
+    marginTop: 40,
     marginBottom: 60,
     marginLeft: 70,
     alignSelf: "flex-start",
@@ -75,7 +75,7 @@ export const styles = StyleSheet.create({
   ajuda: {
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 180,
+    marginTop: 210,
   },
 
   button: {

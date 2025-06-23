@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, ImageBackground, ImageSourcePropType, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  ImageSourcePropType,
+  TouchableOpacity,
+} from "react-native";
 import { styles } from "./styles";
 
 type CardsProps = {
@@ -10,6 +16,8 @@ type CardsProps = {
 };
 
 export const Cards = ({ name, poster, plan, chapters }: CardsProps) => {
+  const op = chapters || plan;
+
   return (
     <TouchableOpacity style={styles.card}>
       <ImageBackground
@@ -17,20 +25,15 @@ export const Cards = ({ name, poster, plan, chapters }: CardsProps) => {
         style={styles.background}
         imageStyle={styles.image}
       />
-        <View style={styles.infoContent}>
-        {plan ? (
-          <Text style={styles.tagPlan}>{plan}</Text>
-        ) : (
-          <View style={styles.tagPlaceholder} />
-        )}
 
-        {chapters ? (
-          <Text style={styles.tagChap}>{chapters}</Text>
-        ) : (
-          <View style={styles.tagPlaceholder} />
-        )}
-      </View>
-          <Text style={styles.name}>{name}</Text>
+      {op && (
+        <View style={styles.infoContent}>
+          {plan && <Text style={styles.tagPlan}>{plan}</Text>}
+          {chapters && <Text style={styles.tagChap}>{chapters}</Text>}
+        </View>
+      )}
+
+      <Text style={[styles.name, !op && styles.semPlano]}>{name}</Text>
     </TouchableOpacity>
   );
 };

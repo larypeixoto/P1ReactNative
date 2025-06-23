@@ -14,7 +14,7 @@ const dramas = [
     chapters: "Episódios...",
   },
   {
-    nome: "Outra paixão na corte do dragão",
+    nome: "A primeira noite com o Duque",
     poster: posterAPNCD,
     plan: "STANDARD",
     chapters: "Episódios...",

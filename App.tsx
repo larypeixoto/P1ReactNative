@@ -1,11 +1,8 @@
 import React from "react";
-import { HomePage } from "./src/screens/Home";
-import { Login } from "./src/screens/Login";
+import { Routes } from "./src/routes/routes";
 
 export default function App() {
   return (
-    // <HomePage/>
-    <Login/>
-
+    <Routes/>
   );
 }
